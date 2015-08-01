@@ -1,0 +1,21 @@
+.media {
+  clear: both;
+  max-width: 800px;
+}
+
+.media__image {
+  float: left;
+  padding-right: 30px;
+}
+
+.media__title {
+  color: white;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.media__content {
+  display: block;
+  float: left;
+  max-width: 500px;
+}

@@ -1,0 +1,43 @@
+.video-player {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  left: 0;
+  right: 0;
+  transition: height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53),
+              top 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.is-visible {
+  height: 100%;
+  top: 0%;
+}
+
+.is-hidden {
+  height: 0;
+  top: 50%;
+  pointer-events: none;
+}
+
+.video-player video {
+  height: 100%;
+  width: 100%
+}
+
+.video-player__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 42px;
+  width: 42px;
+  font-size: 32px;
+  line-height: 1px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  // Value required in webkit to appear in fullscreen mode.
+  z-index: 2147483647;
+}

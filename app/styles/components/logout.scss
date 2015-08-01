@@ -1,0 +1,6 @@
+.logout {
+  @include pill-button(#888);
+  padding: 5px 15px 4px 15px;
+  font-weight: 300;
+  font-size: 12px;
+}

@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   var ENV = {
+    // Custom variables
+    userActivityDelay: 4000,
+
     modulePrefix: 'video-vault',
     environment: environment,
     baseURL: '/',
@@ -37,6 +40,9 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    // Custom variables
+    ENV.userActivityDelay = 0;
   }
 
   if (environment === 'production') {

@@ -1,0 +1,88 @@
+/*
+  This styling code has been designed to require a minimal amount of css
+  classes in the markup. Please never write code like this.
+
+  Rather I recommend following the practices outlined at:
+
+  http://cssguidelin.es/
+*/
+
+@import 'variables';
+@import 'utilities';
+@import 'mixins';
+@import 'grid';
+@import 'components/movie-grid';
+@import 'components/media';
+@import 'components/video-player';
+@import 'components/login';
+@import 'components/logout';
+@import 'components/header';
+@import 'components/login-error';
+@import 'components/page-nav';
+
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+  line-height: 1.25;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $primary-brand;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 180%;
+  color: $primary-brand;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 120%;
+  color: #222;
+  box-shadow: inset 2px 2px 3px 0 rgba(0,0,0,0.1);
+  border-radius: 2px;
+  border: solid 1px #222;
+  outline: none;
+  width: 100%;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+form {
+  max-width: 300px;
+}
+
+.logo {
+  color: darken($primary-brand, 0);
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: $margin * 3;
+  width: 426px; // Scale down for retina
+  float: left;
+}
+
+.sub-navigation {
+  margin-bottom: 15px;
+}
+
+.tagline {
+  color: white;
+  font-style: italic;
+}
